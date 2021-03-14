@@ -1,0 +1,22 @@
+# Output com as informações que tem antes do .
+
+# Dados do arquivo arquivo.txt:
+10.175.192.16   vgxyxgf.de.foo.net  asdf    34efg
+10.175.192.17   sdtds.de.foo.net    xyyxv   e5432
+10.175.243.20   asdfycfb.us.foo.net dfvasf  34525
+
+# Output com as 5 primeiras informações separadas pelo ponto 
+# comando:
+cut -f1-5 -d. arquivo.txt
+# saida do comando:
+10.175.192.16   vgxyxgf.de
+10.175.192.17   sdtds.de
+10.175.243.20   asdfycfb.us
+
+# Output com a primeira informação separada pelo ponto 
+# comando:
+cut -f1-1 -d. arquivo.txt
+# saida:
+10
+10
+10
